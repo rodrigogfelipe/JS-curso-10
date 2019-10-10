@@ -19,15 +19,20 @@
 
 </style>
 </head>
-<!--Declarando HTML-->
+<!--Declarando HTML. -->
 <body>
-    <div id="area" onclick="clicar()" onmouseenter= "entrar()" onmouseout= "sair()">
+    <div id="area">
         interaja
 </div>
  <!--Script JS-->
  <script>
      var a = window.document.getElementById("area")
-    /*Quando clicar monstrara clicou */
+    /*Configurando os eventos onclick metado clicar */
+     a.addEventListener('click',clicar)
+     a.addEventListener('mouseenter',entrar)
+     a.addEventListener('mouseout',sair)
+
+    /* Fuctions função do JS. Quando clicar monstrara clicou */
      function clicar(){ 
          
          a.innerText = 'Clicou !'
